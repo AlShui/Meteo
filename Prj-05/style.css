@@ -1,0 +1,80 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* REGOLE GENERALI */
+html{
+    background: linear-gradient(#eaedfd, #89a4f8);
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: black;
+}
+
+/*  CONTAINER */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* LOGO */
+
+.header img{
+    width: 56px;
+    height: auto;
+}
+
+/* Contenuto principale */
+
+main{
+    text-align: center;
+}
+.weather-info{
+    margin-bottom: 32px;
+}
+
+.weather-icon{
+    max-width: 100%;
+    transition: transform 0.5s, opacity 1s;
+}
+
+.suggestion,
+.weather-location{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-temperature{
+    font-size: 112px;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.panel h4{
+    font-size: 16px;
+    font-weight: normal;
+    color: steelblue;
+    margin-bottom: 12px;
+}
+
+/* Effetti di Caricamento */
+
+.js-loading .weather-icon{
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.js-loading .panel{
+    opacity: 0;
+    transform: scale(0);
+}
